@@ -1,0 +1,27 @@
+{
+    "name": "consumer-react",
+    "version": "0.0.1",
+    "description": "Consume your apis in React projects quickly and easily",
+    "main": "index.js",
+    "scripts": {
+        
+    },
+    "keywords": [],
+    "author": "Binho.dev",
+    "license": "ISC",
+    "type": "module",
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "devDependencies": {
+        "react": "^19.0.0",
+        "typescript": "^5.7.3"
+    },
+    "peerDependencies": {
+        "react": "^19.0.0"
+    },
+    "dependencies": {
+        "axios": "^1.7.9",
+        "zod": "^3.24.1"
+    }
+}

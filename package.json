@@ -12,7 +12,7 @@
         "lint": "tsc",
         "test": "vitest run",
         "dev": "vitest",
-        "local-release": "changesets version && changesets tag",
+        "local-release": "changeset version && changeset tag",
         "prepublishOnly": "pnpm run ci"
     },
     "keywords": [],

@@ -17,19 +17,19 @@
 
         /* If transpiling with TypeScript: */
         "module": "Preserve",
-        "outDir": "dist",
-        "rootDir": "src",
+        "outDir": "./dist",
+        "rootDir": "./src",
         "sourceMap": true,
 
         /* AND if you're building for a library: */
         "declaration": true,
 
         /* AND if you're building for a library in a monorepo: */
-        // "declarationMap": true,
+        "declarationMap": true,
 
         // "lib": ["es2022"],
-        "noEmit": true
+        "noEmit": false
     },
-    "include": ["src"],
+    "include": ["src/**/*"],
     "exclude": ["tsup.config.ts"]
 }

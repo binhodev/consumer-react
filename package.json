@@ -3,6 +3,8 @@
     "version": "0.0.2",
     "description": "Consume your apis in React projects quickly and easily",
     "main": "dist/index.js",
+    "types": "./dist/index.d.ts",
+    "module": "./dist/index.js",
     "scripts": {
         "build": "tsup",
         "ci": "pnpm run build && pnpm run check-format && pnpm run check-exports && pnpm run lint && pnpm run test",
@@ -27,7 +29,8 @@
         "url": "git+https://github.com/binhodev/consumer-react.git"
     },
     "files": [
-        "dist"
+        "dist",
+        "package.json"
     ],
     "exports": {
         "./package.json": "./package.json",

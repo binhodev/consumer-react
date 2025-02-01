@@ -28,5 +28,8 @@ jobs:
             - name: Install dependencies
               run: pnpm install
 
+            - name: Run Format
+              run: pnpm Format
+
             - name: Run CI
               run: pnpm run ci

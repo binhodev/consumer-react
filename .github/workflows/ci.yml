@@ -33,3 +33,12 @@ jobs:
 
             - name: Run CI
               run: pnpm run ci
+
+            - name: Create Release Pull Request
+              uses: changesets/action@v1
+              with:
+                  title: "📦 Version Packages"
+                  commit: "📦 chore: update versions"
+                  setupGitUser: true
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GHS_TOKEN }}

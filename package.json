@@ -11,7 +11,9 @@
         "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
         "lint": "tsc",
         "test": "vitest run",
-        "dev": "vitest"
+        "dev": "vitest",
+        "local-release": "changesets version && changesets tag",
+        "prepublishOnly": "pnpm run ci"
     },
     "keywords": [],
     "homepage": "https://github.com/binhodev/consumer-react",
@@ -40,6 +42,7 @@
     },
     "devDependencies": {
         "@arethetypeswrong/cli": "^0.17.3",
+        "@changesets/cli": "^2.27.12",
         "prettier": "^3.4.2",
         "react": "^19.0.0",
         "tsup": "^8.3.6",

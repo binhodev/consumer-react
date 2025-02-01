@@ -23,7 +23,10 @@ jobs:
                   node-version: "20"
 
             - name: Install PNPM
-              run: npm install pnpm
+              run: npm install -g pnpm
+
+            - name: Install dependencies
+              run: pnpm install
 
             - name: Run CI
               run: pnpm run ci

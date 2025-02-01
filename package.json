@@ -4,16 +4,30 @@
     "description": "Consume your apis in React projects quickly and easily",
     "main": "index.js",
     "scripts": {
-        
+        "build": "tsc",
+        "ci": "pnpm run build",
+        "format": "prettier --write ."
     },
     "keywords": [],
+    "homepage": "https://github.com/binhodev/consumer-react",
+    "bugs": {
+        "url": "https://github.com/binhodev/consumer-react/issues"
+    },
     "author": "Binho.dev",
-    "license": "ISC",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/binhodev/consumer-react.git"
+    },
+    "files": [
+        "dist"
+    ],
     "type": "module",
     "engines": {
         "node": ">=18.0.0"
     },
     "devDependencies": {
+        "prettier": "^3.4.2",
         "react": "^19.0.0",
         "typescript": "^5.7.3"
     },

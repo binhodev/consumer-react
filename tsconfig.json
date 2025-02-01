@@ -30,5 +30,6 @@
         // "lib": ["es2022"],
         "noEmit": true
     },
+    "include": ["src"],
     "exclude": ["tsup.config.ts"]
 }

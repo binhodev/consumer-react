@@ -1,5 +1,17 @@
 # consumer-react
 
+## 0.1.0
+
+### Minor Changes
+
+- 3e1d774: feat: adiciona ConsumerClient e handleResponse para gerenciar requisições HTTP com validação de esquema
+
+    feat: adiciona hook **useGet** para gerenciar requisições GET com validação de esquema
+
+### Patch Changes
+
+- f42d5b7: test: adiciona testes de exemplo utilizando Vitest
+
 ## 0.0.3
 
 ### Patch Changes

@@ -16,7 +16,7 @@
         "dev": "vitest",
         "local-release": "changeset version && changeset tag",
         "prepublishOnly": "pnpm run ci",
-        "prepare": "pnpm run ci"
+        "prepare": "pnpm run build"
     },
     "keywords": [],
     "homepage": "https://github.com/binhodev/consumer-react",

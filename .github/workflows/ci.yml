@@ -40,5 +40,6 @@ jobs:
                   title: "📦 Version Packages"
                   commit: "📦 chore: update versions"
                   setupGitUser: true
+                  branch: "main"
               env:
                   GITHUB_TOKEN: ${{ secrets.GHS_TOKEN }}

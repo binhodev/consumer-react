@@ -23,6 +23,12 @@ importers:
 
   apps/nextjs-example:
     dependencies:
+      '@consumer-react/core':
+        specifier: workspace:*
+        version: link:../../packages/core
+      '@consumer-react/next':
+        specifier: workspace:*
+        version: link:../../packages/next
       '@repo/ui':
         specifier: workspace:*
         version: link:../../packages/ui
@@ -35,6 +41,9 @@ importers:
       react-dom:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
+      zod:
+        specifier: ^3.11.6
+        version: 3.24.1
     devDependencies:
       '@repo/eslint-config':
         specifier: workspace:*

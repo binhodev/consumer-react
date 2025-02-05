@@ -37,7 +37,6 @@ jobs:
                   title: "📦 Version Packages"
                   commit: "📦 chore: update versions"
                   setupGitUser: true
-                  version: pnpm version
                   branch: "main"
               env:
                   GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}

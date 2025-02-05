@@ -26,15 +26,6 @@ importers:
 
   apps/nextjs-example:
     dependencies:
-      '@consumer-react/core':
-        specifier: workspace:*
-        version: link:../../packages/core
-      '@consumer-react/next':
-        specifier: workspace:*
-        version: link:../../packages/next
-      '@repo/ui':
-        specifier: workspace:*
-        version: link:../../packages/ui
       next:
         specifier: ^15.1.6
         version: 15.1.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0)

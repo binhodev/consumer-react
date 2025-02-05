@@ -10,9 +10,6 @@
         "check-types": "tsc --noEmit"
     },
     "dependencies": {
-        "@consumer-react/core": "workspace:*",
-        "@consumer-react/next": "workspace:*",
-        "@repo/ui": "workspace:*",
         "next": "^15.1.6",
         "react": "^19.0.0",
         "react-dom": "^19.0.0",

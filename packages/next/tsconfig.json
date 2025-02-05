@@ -1,0 +1,13 @@
+{
+    "extends": "@config/typescript/base.json",
+    "compilerOptions": {
+        "outDir": "dist",
+        "jsx": "react-jsx",
+        "baseUrl": ".",
+        "paths": {
+            "@consumer-react/core": ["packages/core/src"]
+        }
+    },
+    "include": ["src"],
+    "exclude": ["node_modules", "dist"]
+}

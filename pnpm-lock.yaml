@@ -55,6 +55,8 @@ importers:
         specifier: 5.7.3
         version: 5.7.3
 
+  packages/config: {}
+
   packages/core:
     dependencies:
       axios:
@@ -63,6 +65,10 @@ importers:
       zod:
         specifier: ^3.11.6
         version: 3.24.1
+    devDependencies:
+      '@config/typescript':
+        specifier: workspace:*
+        version: link:../config
 
   packages/eslint-config:
     devDependencies:
@@ -99,6 +105,28 @@ importers:
       typescript-eslint:
         specifier: ^8.22.0
         version: 8.22.0(eslint@9.19.0)(typescript@5.7.3)
+
+  packages/next:
+    dependencies:
+      '@consumer-react/core':
+        specifier: workspace:*
+        version: link:../core
+      react:
+        specifier: ^19.0.0
+        version: 19.0.0
+      react-dom:
+        specifier: ^19.0.0
+        version: 19.0.0(react@19.0.0)
+    devDependencies:
+      '@config/typescript':
+        specifier: workspace:*
+        version: link:../config
+      '@types/react':
+        specifier: ^19.0.0
+        version: 19.0.8
+      zod:
+        specifier: ^3.11.6
+        version: 3.24.1
 
   packages/typescript-config: {}
 

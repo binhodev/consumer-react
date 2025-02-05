@@ -1,6 +1,5 @@
 import Image, { type ImageProps } from "next/image";
 import styles from "./page.module.css";
-import { ConsumerReactClient } from "@consumer-react/core";
 import { UserComponent } from "../components/user-components";
 
 type Props = Omit<ImageProps, "src"> & {

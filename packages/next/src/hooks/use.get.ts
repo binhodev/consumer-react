@@ -19,7 +19,7 @@ export function useGet<T>(
         setIsLoading(true);
         
         client
-            .asyncGet(route)
+            .get(route)
             .then((response) => {
                 const parsedData = schema.parse(response.data);
 

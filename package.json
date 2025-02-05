@@ -1,5 +1,5 @@
 {
-  "name": "my-turborepo",
+  "name": "consumer-react",
   "private": true,
   "scripts": {
     "build": "turbo build",

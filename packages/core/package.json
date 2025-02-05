@@ -4,7 +4,7 @@
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "scripts": {
-        "build": "tsc -b",
+        "build": "tsup",
         "lint": "eslint 'src/**/*.{ts,tsx}'",
         "test": "vitest"
     },
@@ -14,5 +14,6 @@
     },
     "peerDependencies": {
         "axios": "^0.27.2"
-    }
+    },
+    "devDependencies": {}
 }

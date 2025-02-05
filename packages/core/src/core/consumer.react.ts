@@ -1,6 +1,7 @@
 import axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse } from "axios";
 import {
     ConsumerReactClientOptions,
+    ConsumerReactError,
     ConsumerReactPlugin,
 } from "../types/types";
 
@@ -50,13 +51,21 @@ export class ConsumerReactClient {
                 return response;
             },
             async (error) => {
-                for (const plugin of this.plugins) {
-                    if (plugin.onError) {
-                        error = await plugin.onError(error);
-                    }
-                }
+                // for (const plugin of this.plugins) {
+                //     if (plugin.onError) {
+                //         error = await plugin.onError(error);
+                //     }
+                // }
+                const consumerError: ConsumerReactError = {
+                    ...error,
+                    message: error.message,
+                    status: error.response?.status,
+                    code: error.code,
+                    data: error.response?.data,
+                    originalError: error,
+                };
 
-                return Promise.reject(error);
+                return Promise.reject(consumerError);
             }
         );
     }
@@ -64,8 +73,8 @@ export class ConsumerReactClient {
     /**
      * get<T>
      */
-    public get<T>(route: string, config?: AxiosRequestConfig): Promise<T> {
-        return this.client.get(route, config);
+    public async get<T>(route: string, config?: AxiosRequestConfig) {
+        return await this.client.get<T>(route, config);
     }
 
     /**

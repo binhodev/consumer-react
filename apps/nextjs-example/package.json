@@ -13,7 +13,8 @@
         "next": "^15.1.6",
         "react": "^19.0.0",
         "react-dom": "^19.0.0",
-        "zod": "^3.11.6"
+        "zod": "^3.11.6",
+        "@consumer-react/core": "workspace:*"
     },
     "devDependencies": {
         "@repo/eslint-config": "workspace:*",
